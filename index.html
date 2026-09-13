@@ -1,0 +1,10 @@
+<script>
+const ADMIN_NUMBER = "9329492529";
+
+const params = new URLSearchParams(window.location.search);
+const adminNumber = params.get("admin");
+
+if (adminNumber === ADMIN_NUMBER) {
+    document.body.classList.add("admin-access");
+}
+</script>
